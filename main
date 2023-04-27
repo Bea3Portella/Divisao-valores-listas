@@ -1,0 +1,16 @@
+list_all = list()
+even =[]
+odd = []
+while True:
+    list_all.append(int(input('Digite um número: ')))
+    do_you_continue = str(input('Quer continuar ? [S/N] ')).upper().strip()[0]
+    if do_you_continue in 'Nn':
+        break
+for i in list_all:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(f'A lista completa é {list_all}')
+print(f'A lista de pares é {even}')
+print(f'A lista de ímpares é {odd}')
